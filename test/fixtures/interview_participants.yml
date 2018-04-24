@@ -5,7 +5,7 @@
 # below each fixture, per the syntax in the comments below
 #
 one_truck_manager:
-  interviewer: fleet_manger
+  interviewer: fleet_manager
   interview: first_driver_interview
 
 one_truck_hr:
@@ -17,7 +17,7 @@ one_truck_union:
   interview: first_driver_interview
 
 two_truck_manager:
-  interviewer: fleet_manger
+  interviewer: fleet_manager
   interview: second_driver_interview
 
 two_truck_hr:

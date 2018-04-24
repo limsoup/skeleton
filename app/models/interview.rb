@@ -8,4 +8,13 @@ class Interview < ApplicationRecord
   has_many :questions, through: :interview_questions
   has_many :interviewers, through: :interview_participants
 
+
+  def as_json(options={})
+  	super(only: [:description, :interview_date], 
+  		include: {
+  			candidate: {only: [:name, :email, :phone]}, 
+  			questions: {only: [:question]}
+  			})
+  end
+
 end

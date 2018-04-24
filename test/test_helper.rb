@@ -12,8 +12,10 @@ class ActiveSupport::TestCase
       i.questions.each do |q|
         a = Answer.new(:candidate_id=>i.candidate_id,:interview_id=>i.id,:question_id=>q.id,response: ('a'..'z').to_a.shuffle[0,8].join)
         if a.save
-          i.interview_participants.each do |ip|
-            a.answer_ratings.create(interviewer_id: ip.interviewer_id, rating: rand(5))
+          i.interview_participants.each_with_index do |ip,j|
+            a.answer_ratings.create(interviewer_id: ip.interviewer_id, 
+              rating: j > 0 ? rand(5) : 0
+              )
           end
         end
       end

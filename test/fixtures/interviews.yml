@@ -4,32 +4,33 @@
 # model remove the '{}' from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
+
 first_driver_interview:
   interview_date: <%= (DateTime.now+2.days).to_s(:db) %>
   description: Interviewing Barney Rubble for the truck driver position
-  candidate: barney_rubble
   position: truck_driver
+  # candidate: barney_rubble
 
 second_driver_interview:
   interview_date: <%= (DateTime.now+1.days).to_s(:db) %>
   description: Interviewing Fred Flintstone for the truck driver position
-  candidate: fred_flintstone
   position: truck_driver
+  # candidate: fred_flintstone
 
 first_manager_interview:
   interview_date: <%= (DateTime.now+2.days).to_s(:db) %>
   description: Interviewing Maude Flanders for the manager position
-  candidate: maude_flanders
   position: inventory_manager
+  # candidate: maude_flanders
 
 first_forklift_interview:
   interview_date: <%= (DateTime.now+2.days+2.hours).to_s(:db) %>
   description: Interviewing Bill Snakey for the forklift driver position
-  candidate: bill_snakey
   position: forklift_driver
+  # candidate: bill_snakey
 
 second_forklift_interview:
   interview_date: <%= (DateTime.now+3.days+2.hours).to_s(:db) %>
   description: interviewing fred flintstone for the forklift driver position
-  candidate: fred_flintsonte
   position: forklift_driver
+  # candidate: fred_flintstone

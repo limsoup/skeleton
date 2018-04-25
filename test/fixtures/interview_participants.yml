@@ -5,59 +5,79 @@
 # below each fixture, per the syntax in the comments below
 #
 one_truck_manager:
-  interviewer: fleet_manager
+  participating: fleet_manager (Interviewer)
+  interview: first_driver_interview
+
+one_truck_candidate:
+  participating: barney_rubble (Candidate)
   interview: first_driver_interview
 
 one_truck_hr:
-  interviewer: hr
+  participating: hr (Interviewer)
   interview: first_driver_interview
 
 one_truck_union:
-  interviewer: union
+  participating: union (Interviewer)
   interview: first_driver_interview
 
+two_truck_candidate:
+  participating: fred_flintstone (Candidate)
+  interview: second_driver_interview
+
 two_truck_manager:
-  interviewer: fleet_manager
+  participating: fleet_manager (Interviewer)
   interview: second_driver_interview
 
 two_truck_hr:
-  interviewer: hr
+  participating: hr (Interviewer)
   interview: second_driver_interview
 
 two_truck_union:
-  interviewer: union
+  participating: union (Interviewer)
   interview: second_driver_interview
 
 one_lift_manager:
-  interviewer: warehouse
+  participating: warehouse (Interviewer)
   interview: first_forklift_interview
 
 one_lift_hr:
-  interviewer: hr
+  participating: hr (Interviewer)
   interview: first_forklift_interview
 
 one_lift_union:
-  interviewer: union
+  participating: union (Interviewer)
+  interview: first_forklift_interview
+
+one_lift_candidate:
+  participating: bill_snakey (Candidate)
   interview: first_forklift_interview
 
 two_lift_manager:
-  interviewer: warehouse
+  participating: warehouse (Interviewer)
   interview: second_forklift_interview
 
 two_lift_hr:
-  interviewer: hr
+  participating: hr (Interviewer)
   interview: second_forklift_interview
 
 two_lift_union:
-  interviewer: union
+  participating: union (Interviewer)
   interview: second_forklift_interview
 
+two_lift_candidate:
+  participating: fred_flintstone (Candidate)
+  interview: second_forklift_interview
+
+manager_candidate:
+  participating: maude_flanders (Candidate)
+  interview: first_manager_interview
+
 manager_warehouse:
-  interviewer: warehouse
+  participating: warehouse (Interviewer)
   interview: first_manager_interview
 
 manager_hr:
-  interviewer: warehouse
+  participating: warehouse (Interviewer)
   interview: hr
 
 

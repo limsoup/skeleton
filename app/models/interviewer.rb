@@ -1,6 +1,6 @@
 class Interviewer < ApplicationRecord
   has_many :answer_ratings
-  has_many :interview_participants
+  has_many :interview_participants, as: :participating
   has_many :interviews,
   	-> {order "interview_date ASC"},
   	through: :interview_participants
